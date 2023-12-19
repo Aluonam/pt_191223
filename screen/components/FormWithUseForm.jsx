@@ -15,7 +15,7 @@ const FormWithUseForm = () => {
       <h2>Introduzca:</h2>
 
       <h3>Nombre y apellidos</h3>
-      <input type='text' {...register('name')}></input>
+      <input type='text' {...register('name', {required: true})}></input>
 
       <h3>Contraseña</h3>
       <input type='password' {...register('password')}></input>
