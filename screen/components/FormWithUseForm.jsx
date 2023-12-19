@@ -18,7 +18,17 @@ const FormWithUseForm = () => {
 
   return (
     <>
-    <div>
+    <div style={{
+      width:"30vw",
+      height:"35vh",
+      gap:"20px",
+      backgroundColor:"#e9edc9",
+      border:"1px solid #ccd5ae",
+      borderRadius: "20px",
+      display:"flex",
+      alignItems:"center",
+      flexDirection: "column",
+    }}>
       <form onSubmit={handleSubmit(onSubmit)}>
         <h2>Introduzca:</h2>
 
