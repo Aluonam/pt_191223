@@ -10,15 +10,15 @@ const ProductData = () => {
             const url = await fetch(`https://fakestoreapi.com/products?limit=5`);
             const data = await url.json();
             console.log(data)
+            setDataAPI(data)
         }catch(error){error, "error detected"}
     }
-
-    callAPI()
+   
   return (
     <div>
         
         <h3>Listado de productos</h3>
-        <ModalANT></ModalANT>
+        <ModalANT dataAPI={dataAPI} callAPI={callAPI}></ModalANT>
 
     </div>
   )
