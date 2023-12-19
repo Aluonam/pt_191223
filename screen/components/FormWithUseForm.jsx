@@ -28,6 +28,7 @@ const FormWithUseForm = () => {
       display:"flex",
       alignItems:"center",
       flexDirection: "column",
+      justifyContent: "center"
     }}>
       <form onSubmit={handleSubmit(onSubmit)}>
         <h2>Introduzca:</h2>
