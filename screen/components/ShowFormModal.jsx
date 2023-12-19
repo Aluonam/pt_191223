@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
-const ShowFormModal = () => {
+
+const ShowFormModal = ({dataForm}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
     setIsModalOpen(true);
@@ -11,15 +12,17 @@ const ShowFormModal = () => {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
+
   return (
     <>
       <Button type="primary" onClick={showModal}>
         Open Modal
       </Button>
       <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+        <p>{dataForm.name}</p>
+        <p>{dataForm.password}</p>
+        <p>{dataForm.age}</p>
+        <p>{dataForm.mail}</p>
       </Modal>
     </>
   );
