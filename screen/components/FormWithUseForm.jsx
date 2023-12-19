@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
+import ShowFormModal from './ShowFormModal';
 
 const FormWithUseForm = () => {
 
@@ -32,8 +33,9 @@ const FormWithUseForm = () => {
       <h3>Email</h3>
       <input type='mail' {...register('mail')}></input>
 
-      <br></br>
-      <input type='submit' value='Enviar' />
+      {/* <br></br>
+      <input type='submit' value='Enviar' /> */}
+      <ShowFormModal></ShowFormModal>
     </form>
     </>
   )
