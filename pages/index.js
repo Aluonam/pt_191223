@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import ProductData from '@/screen/components/ProductData'
+import FormWithUseForm from '@/screen/components/FormWithUseForm'
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
         <ProductData></ProductData>
+        <FormWithUseForm></FormWithUseForm>
       </main>
     </>
   )

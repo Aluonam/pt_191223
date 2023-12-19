@@ -1,7 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
 
-const UseformExample = () => {
+const FormWithUseForm = () => {
 
   const { register, handleSubmit } = useForm();
 
@@ -15,4 +15,4 @@ const UseformExample = () => {
   )
 }
 
-export default UseformExample
+export default FormWithUseForm
