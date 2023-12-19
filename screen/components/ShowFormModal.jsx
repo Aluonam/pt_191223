@@ -16,9 +16,9 @@ const ShowFormModal = ({dataForm}) => {
   return (
     <>
       <Button type="primary" onClick={showModal}>
-        Open Modal
+        Abre para ver los datos guardados
       </Button>
-      <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+      <Modal title="Los datos guardados son:" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
         <p>{dataForm.name}</p>
         <p>{dataForm.password}</p>
         <p>{dataForm.age}</p>
