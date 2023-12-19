@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const ProductData = () => {
+
+    const [dataAPI, setDataAPI] = useState([])
+
+    const callAPI = ()=>{
+        try{
+
+        }catch(error){error, "error detected"}
+    }
   return (
-    <div>ProductData</div>
+    <div>
+        
+        <h3>Listado de productos</h3>
+
+
+    </div>
   )
 }
 
