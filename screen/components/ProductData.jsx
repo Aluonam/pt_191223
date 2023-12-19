@@ -15,7 +15,17 @@ const ProductData = () => {
     }
    
   return (
-    <div>
+    <div style={{
+      backgroundColor:"aliceblue",
+      border:"1px solid navy",
+      borderRadius:"20px",
+      width:"30vw",
+      height:"20vh",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+    }}>
         
         <h3>Listado de productos</h3>
         <ModalANT dataAPI={dataAPI} callAPI={callAPI}></ModalANT>
