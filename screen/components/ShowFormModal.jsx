@@ -19,10 +19,10 @@ const ShowFormModal = ({dataForm}) => {
         Abre para ver los datos guardados
       </Button>
       <Modal title="Los datos guardados son:" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-        <p>{dataForm.name}</p>
-        <p>{dataForm.password}</p>
-        <p>{dataForm.age}</p>
-        <p>{dataForm.mail}</p>
+        <p>{dataForm?.name}</p>
+        <p>{dataForm?.password}</p>
+        <p>{dataForm?.age}</p>
+        <p>{dataForm?.mail}</p>
       </Modal>
     </>
   );
