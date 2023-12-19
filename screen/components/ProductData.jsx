@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ModalANT from './ModalANT';
 
 const ProductData = () => {
 
@@ -17,7 +18,7 @@ const ProductData = () => {
     <div>
         
         <h3>Listado de productos</h3>
-
+        <ModalANT></ModalANT>
 
     </div>
   )
