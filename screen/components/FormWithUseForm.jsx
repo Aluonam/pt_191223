@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 
 const FormWithUseForm = () => {
 
-  const { register, handleSubmit } = useForm();
+  const { register, formState:{ errors }, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
@@ -16,6 +16,7 @@ const FormWithUseForm = () => {
 
       <h3>Nombre y apellidos</h3>
       <input type='text' {...register('name', {required: true})}></input>
+      {errors.name?.type === 'required' && <p style={{color:"red"}}>El campo nombre es requerido</p>}
 
       <h3>Contraseña</h3>
       <input type='password' {...register('password')}></input>
