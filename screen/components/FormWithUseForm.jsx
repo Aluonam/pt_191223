@@ -12,7 +12,7 @@ const FormWithUseForm = () => {
   const ageValidator = (value) => {
     return value >= 18 && value <= 65;
   }
-  
+
   return (
     <>
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -27,6 +27,7 @@ const FormWithUseForm = () => {
 
       <h3>Edad</h3>
       <input type='number' {...register('age',{ validate: ageValidator})}></input>
+      {errors.age && <p style={{color:"red"}}>Debes tener entre 18 y 65 años</p>}
 
       <h3>Email</h3>
       <input type='mail' {...register('mail')}></input>
