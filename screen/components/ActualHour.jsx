@@ -8,7 +8,7 @@ const ActualHour = () => {
       
       const interval = setInterval(()=>{
         const date = new Date();
-        const onlyHour = date.toLocaleString()
+        const onlyHour = date.toLocaleString().split(",")
         console.log(onlyHour)
       },1000)
       return () => clearInterval(interval);
