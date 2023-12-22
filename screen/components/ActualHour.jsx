@@ -5,7 +5,8 @@ const ActualHour = () => {
     const [hour, setHour] = useState("00:00:00")
 
     useEffect(() => {
-      
+      const date = new Date();
+      console.log(date)
     }, [])
     
   return (
