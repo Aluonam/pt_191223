@@ -5,8 +5,14 @@ const ActualHour = () => {
     const [hour, setHour] = useState("00:00:00")
 
     useEffect(() => {
-      const date = new Date();
-      console.log(date)
+      
+      const interval = setInterval(()=>{
+        const date = new Date();
+        const onlyHour = date.toLocaleString()
+        console.log(onlyHour)
+      },1000)
+      return () => clearInterval(interval);
+      
     }, [])
     
   return (
