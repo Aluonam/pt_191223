@@ -10,3 +10,5 @@ Crea un formulario y muestra los datos en un modal.
 *Uso de useForm y controles de formulario de useForm
 
 ### Tarea 3
+
+Muestra la hora actual cuando se renderice el componente. Y que se actualice.
