@@ -19,8 +19,9 @@ const FormWithUseForm = () => {
   return (
     <>
     <div style={{
-      width:"30vw",
+      width:"340px",
       height:"35vh",
+      minHeight:"320px",
       gap:"20px",
       backgroundColor:"#e9edc9",
       border:"1px solid #ccd5ae",
