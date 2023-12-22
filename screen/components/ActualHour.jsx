@@ -19,6 +19,8 @@ const ActualHour = () => {
     <div style={{
         width:"300px",
         height:"20vh",
+        
+      minHeight:"120px",
         gap:"20px",
         backgroundColor:"#f5ebe0",
         border:"1px solid #d6ccc2",
