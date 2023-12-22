@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import ProductData from '@/screen/components/ProductData'
 import FormWithUseForm from '@/screen/components/FormWithUseForm'
+import ActualHour from '@/screen/components/ActualHour'
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <main className={`${styles.main}`}>
         <ProductData></ProductData>
         <FormWithUseForm></FormWithUseForm>
+        <ActualHour></ActualHour>
       </main>
     </>
   )
